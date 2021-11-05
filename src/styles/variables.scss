@@ -1,0 +1,24 @@
+// sidebar
+// $menuText:#bfcbd9;
+// $menuText:#777777;
+$menuText:#000;
+// $menuActiveText:#e67e22;
+$menuActiveText:red;
+$subMenuActiveText:#f4f4f5;
+$menuBg:#FFF; //整体菜单背景色
+$menuHover:#eeeeee; //菜单悬浮变色
+$subMenuBg:#FFF; //子菜单背景
+$subMenuHover:#e67e22; //子菜单悬浮背景
+$sideBarWidth: 210px;
+// $ActiveBorder:1px solid red; //选中边框颜色
+:export {
+    menuText: $menuText;
+    menuActiveText: $menuActiveText;
+    subMenuActiveText: $subMenuActiveText;
+    menuBg: $menuBg;
+    menuHover: $menuHover;
+    subMenuBg: $subMenuBg;
+    subMenuHover: $subMenuHover;
+    sideBarWidth: $sideBarWidth;
+    // ActiveBorder: $ActiveBorder; //选中边框
+}
