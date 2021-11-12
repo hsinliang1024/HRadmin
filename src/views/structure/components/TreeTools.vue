@@ -1,18 +1,19 @@
 <template>
   <div>
+
        <el-row type="flex" justify="space-between" align="middle" style="width:100%;height:40px">
 
-      <el-col>
+      <el-col :span="8">
         <span>{{treeData.name}}</span>
         </el-col>
 
       <el-col :span="4">
           <el-row type="flex" justify="end">
             <!-- 负责人 -->
-            <el-col>
-              {{treeData.manager}}
+            <el-col :span="9" class="custom-tree-node">
+              <span>{{treeData.manager}}</span>
               </el-col>
-            <el-col>
+            <el-col :span="9">
               <!-- 下拉菜单 -->
               <el-dropdown @command="handleCommand">
                 <span class="el-dropdown-link">
@@ -28,6 +29,7 @@
           </el-row>
       </el-col>
     </el-row>
+
   </div>
 </template>
 
@@ -70,4 +72,13 @@ export default {
 
 </script>
 <style scoped>
+.el-row{
+  font-size: 14px;
+}
+  .custom-tree-node span{
+    float: right;
+  }
+  .el-dropdown{
+    float: right;
+  }
 </style>

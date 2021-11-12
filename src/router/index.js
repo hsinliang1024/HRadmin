@@ -4,7 +4,7 @@ import Router from 'vue-router'
 import approvalsRouter from './modules/approvals'
 import structureRouter from './modules/structure'
 import staffRouter from './modules/staff'
-import permissionRouter from './modules/permission'
+import setupRouter from './modules/setup'
 import attendancesRouter from './modules/attendances'
 import salarysRouter from './modules/salarys'
 import settingRouter from './modules/setting'
@@ -39,24 +39,6 @@ export const constantRoutes = [{
             meta: { title: 'Dashboard', icon: 'dashboard' }
         }]
     },
-
-    {
-        path: '/example',
-        component: Layout,
-        redirect: '/example/table',
-        name: 'Example',
-        meta: { title: 'Example', icon: 'el-icon-s-help' },
-        children: [{
-            path: 'table',
-            name: 'Table',
-            component: () =>
-                import ('@/views/table/index'),
-            meta: { title: 'Table', icon: 'table' }
-        }]
-    },
-
-
-    // 404 page must be placed at the end !!!
     { path: '*', redirect: '/404', hidden: true }
 ]
 
@@ -65,7 +47,7 @@ export const asyncRoutes = [
     staffRouter,
     approvalsRouter,
     structureRouter,
-    permissionRouter,
+    setupRouter,
     attendancesRouter,
     salarysRouter,
     settingRouter,
@@ -80,10 +62,9 @@ const createRouter = () => new Router({
 
 const router = createRouter()
 
-// Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
 export function resetRouter() {
     const newRouter = createRouter()
-    router.matcher = newRouter.matcher // reset router
+    router.matcher = newRouter.matcher
 }
 
 export default router

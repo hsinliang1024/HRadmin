@@ -22,7 +22,7 @@ const mutations = {
                 // state.name = userInfo.name
         },
         // 删除用户信息
-        reomveUserInfo(state) {
+        removeUserInfo(state) {
             state.userInfo = {}
         }
     }

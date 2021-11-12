@@ -14,6 +14,7 @@
        </el-tree> 
        <add-detps @addDepts="getStrctureData"/>
        <edit-detps @editDepts="getStrctureData"/>
+       
   </div>
 </template>
 
@@ -53,6 +54,6 @@ export default {
 <style scoped>
 .app-container {
   background-color: white;
-  padding: 0 120px;
+  padding: 20px 120px;
 }
 </style>

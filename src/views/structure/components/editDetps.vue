@@ -52,7 +52,7 @@ export default {
       editDetps(){
           editStructure(this.form).then((res)=>{
               this.$emit('editDepts') // 触发自定义事件 使组件刷新
-              this.$message.success('添加部门成功')
+              this.$message.success('删除部门成功')
               this.dialogFormVisible=false
           })
       },

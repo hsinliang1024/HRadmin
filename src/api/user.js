@@ -15,6 +15,6 @@ export function getInfo(token) {
     })
 }
 
-export function logout() {
+// export function logout() {
 
-}
+// }
