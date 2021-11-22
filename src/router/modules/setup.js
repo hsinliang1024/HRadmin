@@ -2,10 +2,10 @@
 import layout from '@/layout'
 export default {
     path: '/setup',
-    name: 'setup',
+    // name: 'Setup',
     component: layout,
     children: [{
-        path: 'setup', //当二级路由path为空时，会作为默认
+        path: '', //当二级路由path为空时，会作为默认
         component: () =>
             import ('@/views/setup'),
         meta: {

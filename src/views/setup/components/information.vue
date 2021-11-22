@@ -12,6 +12,7 @@
 
    <el-alert
     title="欢迎超级管理员，请谨慎修改当前信息"
+    :closable="false"
     type="success"
     show-icon
     v-else>

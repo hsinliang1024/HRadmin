@@ -7,6 +7,7 @@
       class="login-form"
       auto-complete="on"
       label-position="left"
+      v-if="isShow"
     >
       <div class="title-container">
         <h3 class="title">人力资源管理系统</h3>
@@ -57,26 +58,30 @@
       >登录</el-button>
 
       <div class="tips">
-        <span style="margin-right: 20px">username: admin</span>
-        <span> password: any</span>
+        <span style="margin-right: 20px">还没有账号？</span>
+        <a @click="register">点击注册</a>
       </div>
     </el-form>
+    <loginregister v-else @login="login"/>
   </div>
 </template>
 
 <script>
 import { validUsername } from '@/utils/validate'
+import {register} from '@/api/user'
+import loginregister from './loginregister.vue'
 
 export default {
+  components: { loginregister },
   name: 'Login',
   data() {
-    const validateUsername = (rule, value, callback) => {
-      if (!validUsername(value)) {
-        callback(new Error('请输入正确的用户名'))
-      } else {
-        callback()
-      }
-    }
+    // const validateUsername = (rule, value, callback) => {
+    //   if (!validUsername(value)) {
+    //     callback(new Error('请输入正确的用户名'))
+    //   } else {
+    //     callback()
+    //   }
+    // }
     const validatePassword = (rule, value, callback) => {
       if (value.length < 6) {
         callback(new Error('密码不能少于6位'))
@@ -85,13 +90,14 @@ export default {
       }
     }
     return {
+    isShow:true,
       loginForm: {
         username: 'hsinliang',
         password: '111111'
       },
       loginRules: {
         username: [
-          { required: true, trigger: 'blur', validator: validateUsername }
+          { required: true, trigger: 'blur'}
         ],
         password: [
           { required: true, trigger: 'blur', validator: validatePassword }
@@ -99,7 +105,7 @@ export default {
       },
       loading: false,
       passwordType: 'password',
-      redirect: undefined
+      redirect: undefined,
     }
   },
   watch: {
@@ -139,6 +145,13 @@ export default {
           return false
         }
       })
+    },
+    //注册
+    register(){
+      this.isShow = false
+    },
+    login(){
+      this.isShow = true
     }
   }
 }
@@ -218,6 +231,12 @@ $light_gray: #eee;
       &:first-of-type {
         margin-right: 16px;
       }
+    }
+    a{
+      text-decoration:underline;
+    }
+    a:hover{
+      color: orange;
     }
   }
 
