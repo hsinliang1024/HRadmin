@@ -31,7 +31,7 @@
           <el-table-column label="操作" align="center" width="180">
             <!-- 操作 -->
             <template slot-scope="scope">
-            <el-button type="text" title="查看" size="mini">查看</el-button>
+            <el-button type="text" title="查看" size="mini" @click="handleSee(scope.$index, scope.row)" >查看</el-button>
             <el-button type="text" title="修改" size="mini" @click="handleEdit(scope.$index, scope.row)">修改</el-button>
             <el-button type="text" title="删除" @click="handleDel(scope.$index, scope.row)" size="mini">删除</el-button>
              </template>
@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import {getStaffInfo,delStaff} from '@/api/staff'
+import {getStaffInfo,delStaff,seeStaff} from '@/api/staff'
 import addStaff from './commponents/addStaff.vue';
 import EditStaff from './commponents/editStaff.vue';
 export default {
@@ -99,6 +99,10 @@ export default {
       this.isEdit = true
       this.EditInfo = row
       console.log(row)
+    },
+    //查看按钮
+    handleSee(index,row){
+      this.$router.push(`/staff/information/${row._id}`)
     },
     //导出按钮
     uploadExcel(){

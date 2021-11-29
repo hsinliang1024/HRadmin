@@ -44,3 +44,12 @@ export function excelStaff(data) {
         data
     })
 }
+
+//查看员工个人信息
+export function seeStaff(id) {
+    return request({
+        url: `/staff/information/${id}`,
+        method: 'post',
+        params: { id }
+    })
+}

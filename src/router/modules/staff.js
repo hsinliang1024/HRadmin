@@ -4,12 +4,19 @@ export default {
     path: '/staff',
     component: layout,
     children: [{
-        path: '', //当二级路由path为空时，会作为默认
-        component: () =>
-            import ('@/views/staff/index'),
-        meta: {
-            title: '员工管理',
-            icon: 'staff'
+            path: '', //当二级路由path为空时，会作为默认
+            component: () =>
+                import ('@/views/staff/index'),
+            meta: {
+                title: '员工管理',
+                icon: 'staff',
+            }
+        },
+        {
+            path: 'information/:id',
+            hidden: true,
+            component: () =>
+                import ('@/views/staff/commponents/information.vue'),
         }
-    }]
+    ]
 }
