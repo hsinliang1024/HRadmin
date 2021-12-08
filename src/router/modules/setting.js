@@ -9,7 +9,8 @@ export default {
         component: () =>
             import ('@/views/setting'),
         meta: {
-            title: '员工管理'
+            title: '公司设置',
+            icon: 'setup'
         }
     }]
 }

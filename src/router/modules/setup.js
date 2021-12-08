@@ -10,7 +10,7 @@ export default {
             import ('@/views/setup'),
         meta: {
             title: '角色管理',
-            icon: 'setup'
+            icon: 'jsgl'
         }
     }]
 }
