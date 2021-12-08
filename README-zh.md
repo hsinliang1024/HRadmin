@@ -59,9 +59,9 @@ npm run lint -- --fix
 
 你也可以通过 购买[官方授权的贴纸](https://smallsticker.com/product/vue-element-admin) 的方式来支持 vue-element-admin - 每售出一张贴纸，我们将获得 2 元的捐赠。
 
-## Demo
+## 首页
 
-![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
+![home page](https://gitee.com/hsinliang/HRadmin/raw/master/Exhibition/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211208091639.png)
 
 ## Browsers support
 
