@@ -27,52 +27,22 @@ npm run dev
 
 因为node.js搭建在本地，需要拷贝下来运行在本地 [https://gitee.com/hsinliang/hrmDB.git](https://gitee.com/hsinliang/hrmDB.git)
 
-## 发布
-
-```bash
-# 构建测试环境
-npm run build:stage
-
-# 构建生产环境
-npm run build:prod
-```
-
-## 其它
-
-```bash
-# 预览发布环境效果
-npm run preview
-
-# 预览发布环境效果 + 静态资源分析
-npm run preview -- --report
-
-# 代码格式检查
-npm run lint
-
-# 代码格式检查并自动修复
-npm run lint -- --fix
-```
-
-更多信息请参考 [使用文档](https://panjiachen.github.io/vue-element-admin-site/zh/)
-
-## 购买贴纸
-
-你也可以通过 购买[官方授权的贴纸](https://smallsticker.com/product/vue-element-admin) 的方式来支持 vue-element-admin - 每售出一张贴纸，我们将获得 2 元的捐赠。
 
 ## 首页
+![home page](https://gitee.com/hsinliang/HRadmin/raw/master/Exhibition/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211208093207.png)
 
-![home page](https://gitee.com/hsinliang/HRadmin/raw/master/Exhibition/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211208091639.png)
+## 员工模块
+1.全部员工信息
+![roles](https://gitee.com/hsinliang/HRadmin/raw/master/Exhibition/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202112080932071.png)
 
-## Browsers support
+2.个人信息详情
+![roles1](https://gitee.com/hsinliang/HRadmin/raw/master/Exhibition/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202112080932072.png)
 
-Modern browsers and Internet Explorer 10+.
+3.头像上传、预览
+![img](https://gitee.com/hsinliang/HRadmin/raw/master/Exhibition/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202112080932073.png)
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
+## 公司结构
+![structure](https://gitee.com/hsinliang/HRadmin/raw/master/Exhibition/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202112080932074.png)
 
-## License
-
-[MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
-
-Copyright (c) 2017-present PanJiaChen
+## 角色管理
+![staff](https://gitee.com/hsinliang/HRadmin/raw/master/Exhibition/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202112080932075.png)
