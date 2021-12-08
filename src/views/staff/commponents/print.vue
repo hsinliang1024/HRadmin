@@ -11,10 +11,10 @@
    <td width="100px">{{formLabelAlign.name}}</td>
    <td bgcolor="#ededed" width="100px">手机</td>
    <td width="200px">{{formLabelAlign.phone}}</td>
-   <td bgcolor="#ededed" width="100px">出生日期</td>
-   <td>{{formLabelAlign.birthday}}</td>
    <td bgcolor="#ededed">性别</td>
    <td>男</td>
+   <td bgcolor="#ededed" width="100px">出生日期</td>
+   <td>{{formLabelAlign.birthday}}</td>
    
    <td colspan="0" rowspan="3" width="150px" hight="150px">
        <img :src="formLabelAlign.img" width="100%" height="150px" alt="" class="img">

@@ -68,7 +68,7 @@ export default {
       page: {
         // 放置页码及相关数据
         currentPage: 1, //当前页数
-        pagesize: 5, //每页显示条数
+        pagesize: 10, //每页显示条数
         total: 0, // 记录总数
       },
       Serial: 0, //存放序号
@@ -90,7 +90,7 @@ export default {
       this.$confirm('确定删除？').then(()=>{
           return delStaff(row)
         }).then(()=>{
-        this.$message.success('删除部门成功')
+        this.$message.success('删除员工成功')
         this.getStaffInfo() // 刷新组件
         })
     },

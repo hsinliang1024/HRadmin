@@ -21,7 +21,7 @@
           </router-link>
           <a
             target="_blank"
-            href="https://github.com/PanJiaChen/vue-admin-template/"
+            href="https://gitee.com/hsinliang/HRadmin.git"
           >
             <el-dropdown-item>项目链接</el-dropdown-item>
           </a>
